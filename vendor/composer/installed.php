@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '9e189f98870324b75cf88d90375b217d03ef529b',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -152,6 +152,15 @@
             'install_path' => __DIR__ . '/../doctrine/lexer',
             'aliases' => array(),
             'reference' => 'c268e882d4dbdd85e36e4ad69e02dc284f89d229',
+            'dev_requirement' => false,
+        ),
+        'drupal/bootstrap_barrio' => array(
+            'pretty_version' => '5.5.9',
+            'version' => '5.5.9.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/bootstrap_barrio',
+            'aliases' => array(),
+            'reference' => '5.5.9',
             'dev_requirement' => false,
         ),
         'drupal/core' => array(
@@ -335,12 +344,12 @@
             ),
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '9e189f98870324b75cf88d90375b217d03ef529b',
             'dev_requirement' => false,
         ),
         'drush/drush' => array(
@@ -523,8 +532,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.1|2.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.1|2.0',
             ),
         ),
         'psr/event-dispatcher' => array(
@@ -917,6 +926,15 @@
             'reference' => '6ed8243aa5f2cb5a57009f826b5e7fb3c4200cf3',
             'dev_requirement' => false,
         ),
+        'twbs/bootstrap' => array(
+            'pretty_version' => 'v5.2.3',
+            'version' => '5.2.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../twbs/bootstrap',
+            'aliases' => array(),
+            'reference' => 'cb021439c683d9805e2864c58095b92d405e9b11',
+            'dev_requirement' => false,
+        ),
         'twig/twig' => array(
             'pretty_version' => 'v3.5.0',
             'version' => '3.5.0.0',
@@ -925,6 +943,12 @@
             'aliases' => array(),
             'reference' => '3ffcf4b7d890770466da3b2666f82ac054e7ec72',
             'dev_requirement' => false,
+        ),
+        'twitter/bootstrap' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => 'v5.2.3',
+            ),
         ),
         'webflo/drupal-finder' => array(
             'pretty_version' => '1.2.2',
